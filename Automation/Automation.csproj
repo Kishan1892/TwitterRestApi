@@ -126,9 +126,13 @@
   <ItemGroup>
     <Compile Include="Apis\BaseApiTests.cs" />
     <Compile Include="Apis\Models\HomeTimeline.cs" />
+    <Compile Include="Apis\Models\NewUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\BaseApiScenariosSteps.cs" />
+    <Compile Include="Steps\AddUserSteps.cs" />
+    <Compile Include="Steps\CustomStepParamConversionStep.cs" />
+    <Compile Include="Utils\Conversion\CustomTransforms.cs" />
     <Compile Include="Utils\Hooks\FeatureHooks.cs" />
     <Compile Include="Utils\Hooks\ScenarioHooks.cs" />
     <Compile Include="Utils\Settings\Settings.cs" />
@@ -136,6 +140,8 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Features\BaseApiScenarios.feature.feature" />
+    <None Include="Features\AddUsers.feature" />
+    <None Include="Features\CustomStepParamConversion.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

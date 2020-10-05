@@ -48,10 +48,10 @@ namespace Automation.Apis
             Console.WriteLine(Response.Content);
         }
 
-        public static void AssertTweetWasPosted(string tweet)
+        public static void AssertTweetWasPosted(string kishan)
         {
             string test = Response.Content;
-            Assert.True(test.Contains(tweet));
+            Assert.True(test.Contains(kishan));
         }
     }
 }
