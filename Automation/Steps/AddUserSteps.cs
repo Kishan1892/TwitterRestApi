@@ -13,6 +13,8 @@ namespace Foo.specs
         [Given(@"I have input the following users")]
         public void GivenIHaveInputTheFollowingUsers(Table table)
         {
+
+            IEnumerable<dynamic> usersFromDyanmic = table.CreateDynamicSet();
             var users = table.CreateSet<NewUser>();
             NewUser[] a = users.ToArray();
             // Test code
